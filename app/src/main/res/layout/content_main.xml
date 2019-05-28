@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Welcome"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/select_City"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/TxtUser"
+                    android:layout_width="262dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:completionHint="@string/SearchCity"
+                    android:completionThreshold="1"
+                    android:hint="@string/SearchCity" />
+
+                <Button
+                    android:id="@+id/Bt_actualizate"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:foreground="@android:drawable/ic_popup_sync" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/select_date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="371dp"
+                android:layout_height="313dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="@string/Top10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lstCities"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "691401002854",
+    "firebase_url": "https://weather-50bf1.firebaseio.com",
+    "project_id": "weather-50bf1",
+    "storage_bucket": "weather-50bf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691401002854:android:86e0f12555e9e9f0",
+        "android_client_info": {
+          "package_name": "com.example.weather"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691401002854-4helauqsv5hhf9i7l72rsnihq7gjqvn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.weather",
+            "certificate_hash": "8b634babd3936ed78f7cded6ee04d2c62a26608a"
+          }
+        },
+        {
+          "client_id": "691401002854-nse6j3a9lifunkm8goplsrqvstsdg4v0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHVoA-zU8oDKt413tLTr_KNKSd53zZO1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691401002854-nse6j3a9lifunkm8goplsrqvstsdg4v0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
